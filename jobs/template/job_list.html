@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Listings</title>
+</head>
+<body>
+    <h1>Job Listings</h1>
+    <a href="{% url 'post_job' %}">Post a New Job</a>
+    <ul>
+        {% for job in jobs %}
+            <li><a href="{% url 'job_detail' job.pk %}">{{ job.title }} at {{ job.company }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
