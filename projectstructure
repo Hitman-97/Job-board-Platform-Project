@@ -1,0 +1,27 @@
+pip install Django
+
+
+
+django-admin startproject jobboard
+cd jobboard
+python manage.py startapp jobs
+
+
+
+jobboard/
+├── jobboard/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── jobs/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+└── requirements.txt
